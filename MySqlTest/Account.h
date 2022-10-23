@@ -4,31 +4,20 @@
 
 using namespace std;
 // the class that stores data
-class admin
+class Account
 {
 private:
-    char id[15], fname[25], sname[25], email[40], balance[15], type[5];
+    char id[15], fname[25], sname[25], email[40], balance[15], type[5], account_num[14],pass[18];
 public:
-    void getdata(string, string);
+    void getdata();
     void showdata() const;
     string getid() const;
+    string getfname() const;
+    string getsname() const;
     string getemail() const;
-    admin fetch_admin(string);
-    void create_user() const;
-    void create_module() const;
-    void create_report() const;
-    void display_sp() const;
-    void display_all_users() const;
-    void display_all_admins() const;
-    void display_all_students() const;
-    void display_all_teachers() const;
-    void display_all_modules() const;
-    void display_all_reports() const;
-    void display_all_records() const;
-    void delete_admin(string);
-    void delete_student(string);
-    void delete_teacher(string);
-    void delete_module(string);
-    void delete_report(string);
-    void change_student(string);
+    string getbalance() const;
+    string gettype() const;
+    string getaccount_num() const;
+    string getpass() const;
+    Account fetch_Account(string);
 }; //class ends here#pragma once
